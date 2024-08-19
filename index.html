@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Brand - Music & Creativity</title>
+    <style>
+        /* Basic reset */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Lato', sans-serif;
+            color: #FFFFFF;
+            background-color: #000000;
+            background-image: url('your-background-image.jpg'); /* Placeholder for background image or video */
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+        }
+
+        header {
+            text-align: center;
+            padding: 5rem 0;
+            background: rgba(0, 0, 0, 0.7);
+        }
+
+        header h1 {
+            font-family: 'Montserrat', sans-serif;
+            font-size: 4rem;
+            color: #FFFFFF;
+            letter-spacing: 2px;
+        }
+
+        nav {
+            margin-top: 20px;
+        }
+
+        nav a {
+            color: #FFFFFF;
+            text-decoration: none;
+            margin: 0 15px;
+            font-size: 1.2rem;
+        }
+
+        section {
+            padding: 4rem 2rem;
+            background: rgba(0, 0, 0, 0.8);
+        }
+
+        section h2 {
+            font-family: 'Montserrat', sans-serif;
+            font-size: 3rem;
+            margin-bottom: 1rem;
+            color: #FFFFFF;
+            text-align: center;
+        }
+
+        .content {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        p {
+            font-size: 1.2rem;
+            line-height: 1.8;
+            text-align: center;
+            margin-bottom: 2rem;
+        }
+
+        .music-embeds iframe {
+            display: block;
+            margin: 2rem auto;
+        }
+
+        .social-links a {
+            color: #FFFFFF;
+            font-size: 1.5rem;
+            margin: 0 10px;
+            text-decoration: none;
+        }
+
+        .products, .services {
+            display: flex;
+            justify-content: space-around;
+            margin-top: 2rem;
+        }
+
+        .products .product-item, .services .service-item {
+            background-color: #1A1A1A;
+            padding: 2rem;
+            text-align: center;
+            border-radius: 10px;
+            flex: 1;
+            margin: 0 10px;
+        }
+
+        .contact-form {
+            max-width: 600px;
+            margin: 2rem auto;
+            text-align: center;
+        }
+
+        .contact-form input, .contact-form textarea {
+            width: 100%;
+            padding: 1rem;
+            margin-bottom: 1rem;
+            border: none;
+            border-radius: 5px;
+        }
+
+        .contact-form button {
+            background-color: #FF5733;
+            color: #FFFFFF;
+            border: none;
+            padding: 1rem 2rem;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        footer {
+            padding: 2rem 0;
+            text-align: center;
+            background: rgba(0, 0, 0, 0.7);
+        }
+
+        footer p {
+            font-size: 1rem;
+        }
+
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <h1>Your Brand Name</h1>
+        <nav>
+            <a href="#bio">Bio</a>
+            <a href="#music">Music</a>
+            <a href="#products">Products</a>
+            <a href="#services">Services</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
+
+    <section id="bio">
+        <div class="content">
+            <h2>Biography</h2>
+            <p>
+                Welcome to my creative world! I’m a Scottish EDM/Indie Rock artist, guitarist, singer, and songwriter,
+                blending live music with the power of AI. Through my live performances, cinematic content creation, and
+                online ventures, I aim to build an immersive experience for audiences and musicians alike.
+            </p>
+        </div>
+    </section>
+
+    <section id="music">
+        <div class="content">
+            <h2>Music</h2>
+            <p>Explore my latest tracks, available on your favorite platforms.</p>
+            <div class="music-embeds">
+                <!-- Replace the iframe links with your music embeds -->
+                <iframe src="https://www.youtube.com/embed/trackID" width="560" height="315" frameborder="0"
+                    allow="autoplay; encrypted-media" allowfullscreen></iframe>
+            </div>
+        </div>
+    </section>
+
+    <section id="products">
+        <div class="content">
+            <h2>Products</h2>
+            <div class="products">
+                <div class="product-item">
+                    <h3>Album Name</h3>
+                    <p>A description of your latest album.</p>
+                </div>
+                <div class="product-item">
+                    <h3>Merchandise</h3>
+                    <p>Exclusive T-shirts, hoodies, and more.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="services">
+        <div class="content">
+            <h2>Services</h2>
+            <div class="services">
+                <div class="service-item">
+                    <h3>Mixing & Mastering</h3>
+                    <p>Professional services for your next hit track.</p>
+                </div>
+                <div class="service-item">
+                    <h3>Live Gigs & Performances</h3>
+                    <p>Book me for live performances at your venue or event.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact">
+        <div class="content">
+            <h2>Contact</h2>
+            <p>Get in touch with me for collaborations, bookings, or any inquiries.</p>
+            <div class="contact-form">
+                <form action="your-form-handler.php" method="POST">
+                    <input type="text" name="name" placeholder="Your Name" required>
+                    <input type="email" name="email" placeholder="Your Email" required>
+                    <textarea name="message" placeholder="Your Message" rows="5" required></textarea>
+                    <button type="submit">Send Message</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>Follow me on social media:</p>
+        <div class="social-links">
+            <a href="https://twitter.com/yourprofile">Twitter</a>
+            <a href="https://instagram.com/yourprofile">Instagram</a>
+            <a href="https://facebook.com/yourprofile">Facebook</a>
+        </div>
+        <p>&copy; 2024 Your Brand Name. All rights reserved.</p>
+    </footer>
+
+</body>
+
+</html>
